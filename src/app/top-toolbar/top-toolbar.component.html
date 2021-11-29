@@ -1,0 +1,43 @@
+<mat-toolbar color="primary">
+    <div class="toolbar-drop-menu">
+        <button mat-mini-fab color="accent" aria-laber="Alege sursa de venit">
+            <mat-icon>filter_list</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+        </mat-menu>
+    </div>
+    <div class="toolbar-title">
+        <a [routerLink]="['/']">
+            <h1>Situație Venituri</h1>
+        </a>
+    </div>
+    <span class="add-spacer"></span>
+    <div class="add-transaction-button-container">
+        <button mat-mini-fab color="accent" aria-label="Example icon button with a plus one icon">
+            <mat-icon>plus_one</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
+
+<div class="flex-toolbar">
+    <div class="flex-toolbar-left">
+        <div class="info">
+            <div class="info-items">
+                <div>Barbershop</div>
+                <div>Other</div>
+                <div>Tips</div>
+            </div>
+            <div class="info-amounts">
+                <div>700</div>
+                <div>600</div>
+                <div>200</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-topbar-right">
+        <button class="btn"><i class="fa fa-plus"></i> </button>
+    </div>
+</div>
